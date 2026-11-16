@@ -42,7 +42,7 @@ docker compose logs
 docker compose logs -f web
 ```
 
-The app endpoint should return a response after it can connect to MySQL.
+MySQL may take a short time to initialize. If the first request returns HTTP 503, wait briefly and try the endpoint again; a successful response confirms the database connection.
 
 ### 5. Stop and remove the stack
 ```bash
@@ -59,7 +59,7 @@ docker compose down -v
 - Web service cannot connect: use the service hostname `db`, not `localhost`; inspect logs and credentials.
 - Port already in use: stop the conflicting process or change the host-side port mapping.
 - Data disappears: retain the named volume; `docker compose down -v` deliberately removes it.
-- Database starts slowly: `depends_on` is startup ordering, not a readiness check; the sample app retries its connection.
+- Database starts slowly: `depends_on` is startup ordering, not a readiness check; wait for MySQL initialization and retry the HTTP request.
 
 ## Observation checklist
 - [ ] Compose version verified
