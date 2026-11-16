@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="900" viewBox="0 0 1260 900">
+ <rect width="1260" height="900" fill="#F6F7F9"/>
+ <text x="40" y="55" font-family="Arial" font-size="30" font-weight="700" fill="#202124">CampusBite · High-fidelity mobile screen concepts</text>
+ <defs><style>.h{font:700 21px Arial;fill:#202124}.b{font:14px Arial;fill:#202124}.m{font:12px Arial;fill:#6B7280}.w{font:700 14px Arial;fill:white}.card{fill:white;stroke:#E5E7EB;stroke-width:1}</style></defs>
+ <g transform="translate(65 100)">
+  <rect width="340" height="740" rx="32" fill="#fff" stroke="#D1D5DB" stroke-width="3"/>
+  <text x="24" y="40" class="h">CampusBite</text><circle cx="300" cy="30" r="16" fill="#FFF0E9"/>
+  <text x="24" y="82" class="h">Hungry? Let's fix that.</text><text x="24" y="106" class="m">Good food, right around campus.</text>
+  <rect x="24" y="128" width="292" height="48" rx="12" fill="#F3F4F6"/><text x="42" y="158" class="m">Search dishes or restaurants</text>
+  <text x="24" y="215" class="h">Explore</text>
+  <rect x="24" y="232" width="84" height="38" rx="19" fill="#FF5A1F"/><text x="47" y="256" class="w">All</text><rect x="116" y="232" width="84" height="38" rx="19" fill="#FFF0E9"/><text x="133" y="256" class="b">Meals</text><rect x="208" y="232" width="108" height="38" rx="19" fill="#FFF0E9"/><text x="228" y="256" class="b">Snacks</text>
+  <text x="24" y="310" class="h">Popular near you</text>
+  <rect x="24" y="328" width="292" height="112" rx="16" class="card"/><rect x="36" y="340" width="88" height="88" rx="12" fill="#FFE2D4"/><text x="143" y="365" class="b">Campus Kitchen</text><text x="143" y="389" class="m">North Indian · 4.5 ★</text><text x="143" y="414" class="m">20–25 min · From ₹99</text>
+  <rect x="24" y="454" width="292" height="112" rx="16" class="card"/><rect x="36" y="466" width="88" height="88" rx="12" fill="#FFE9B8"/><text x="143" y="491" class="b">The Noodle Spot</text><text x="143" y="515" class="m">Asian · 4.3 ★</text><text x="143" y="540" class="m">25–30 min · From ₹129</text>
+  <rect x="18" y="680" width="304" height="42" rx="14" fill="#FFF0E9"/><text x="48" y="707" class="b">Home       Orders       Cart       Profile</text>
+ </g>
+ <g transform="translate(460 100)">
+  <rect width="340" height="740" rx="32" fill="#fff" stroke="#D1D5DB" stroke-width="3"/>
+  <rect x="16" y="16" width="308" height="190" rx="22" fill="#FFE2D4"/><text x="30" y="50" class="m">Back</text><text x="30" y="160" class="h">Campus Kitchen</text><text x="30" y="184" class="m">North Indian · 4.5 ★ · 20–25 min</text>
+  <text x="24" y="245" class="h">Popular picks</text>
+  <rect x="24" y="265" width="292" height="105" rx="16" class="card"/><rect x="36" y="277" width="80" height="80" rx="12" fill="#FFE9B8"/><text x="132" y="301" class="b">Paneer rice bowl</text><text x="132" y="325" class="m">Comfort meal · ₹149</text><rect x="248" y="333" width="54" height="28" rx="8" fill="#FFF0E9"/><text x="260" y="352" font-family="Arial" font-size="12" font-weight="700" fill="#FF5A1F">ADD +</text>
+  <rect x="24" y="384" width="292" height="105" rx="16" class="card"/><rect x="36" y="396" width="80" height="80" rx="12" fill="#DDF4E6"/><text x="132" y="420" class="b">Veg wrap</text><text x="132" y="444" class="m">Fresh & light · ₹109</text><rect x="248" y="452" width="54" height="28" rx="8" fill="#FFF0E9"/><text x="260" y="471" font-family="Arial" font-size="12" font-weight="700" fill="#FF5A1F">ADD +</text>
+  <rect x="24" y="635" width="292" height="58" rx="14" fill="#FF5A1F"/><text x="116" y="671" class="w">View Cart · ₹149</text>
+ </g>
+ <g transform="translate(855 100)">
+  <rect width="340" height="740" rx="32" fill="#fff" stroke="#D1D5DB" stroke-width="3"/>
+  <text x="24" y="48" class="h">Checkout</text><text x="24" y="78" class="m">Almost there — review your order.</text>
+  <rect x="24" y="105" width="292" height="105" rx="16" class="card"/><text x="42" y="137" class="b">Delivering to</text><text x="42" y="163" class="m">Campus · Main Hostel</text><text x="42" y="188" font-family="Arial" font-size="12" fill="#FF5A1F">Change address</text>
+  <text x="24" y="252" class="h">Order summary</text><text x="24" y="290" class="b">Paneer rice bowl × 1</text><text x="280" y="290" class="b">₹149</text><line x1="24" y1="312" x2="316" y2="312" stroke="#E5E7EB"/>
+  <text x="24" y="345" class="m">Item total</text><text x="280" y="345" class="m">₹149</text><text x="24" y="375" class="m">Delivery fee</text><text x="280" y="375" class="m">₹20</text><text x="24" y="405" class="m">Campus offer</text><text x="280" y="405" font-family="Arial" font-size="12" fill="#168A52">−₹10</text><line x1="24" y1="428" x2="316" y2="428" stroke="#E5E7EB"/>
+  <text x="24" y="465" class="b">Total payable</text><text x="265" y="465" class="h">₹159</text>
+  <rect x="24" y="505" width="292" height="70" rx="16" class="card"/><text x="42" y="535" class="b">Payment method</text><text x="42" y="558" class="m">UPI · Choose another</text>
+  <rect x="24" y="635" width="292" height="58" rx="14" fill="#FF5A1F"/><text x="110" y="671" class="w">Place Order · ₹159</text>
+ </g>
+</svg>
