@@ -1,0 +1,9 @@
+{
+  "name": "docker-lab-9",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dockerized Express sample for CDD Experiment 9",
+  "main": "app.js",
+  "scripts": { "start": "node app.js" },
+  "dependencies": { "express": "^4.21.2" }
+}
