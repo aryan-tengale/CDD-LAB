@@ -1,0 +1,14 @@
+{
+  "name": "cdd-lab-ci-sample",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal Node.js sample for CDD Lab Experiments 6 and 7",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
