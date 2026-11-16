@@ -68,3 +68,12 @@ The MySQL credentials in the Compose sample are demonstration-only values. Do no
 - Replace sample names, email addresses, repository URLs and student details with your own where required.
 - Do not commit passwords, access tokens, API keys or other secrets.
 - Add your own screenshots, observations, Figma exports, and actual prototype link after completing each activity. A guide or sample file does not mean an experiment has been executed or completed.
+
+## Execution evidence
+
+- [Execution status for Experiments 1–13](Execution-Results/EXECUTION-STATUS.md)
+- [Actual terminal command output](Execution-Results/command-results.txt)
+- Experiment 12 artifacts: [personas and journey](Experiment-12-UX-Research-and-Wireframes/artifacts/personas-and-journey.md), [low-fidelity wireframes](Experiment-12-UX-Research-and-Wireframes/artifacts/low-fidelity-wireframes.svg)
+- Experiment 13 artifacts: [Figma handoff](Experiment-13-Figma-UI-Prototyping/artifacts/figma-handoff.md), [high-fidelity screen concepts](Experiment-13-Figma-UI-Prototyping/artifacts/high-fidelity-screens.svg)
+
+The execution record explicitly separates locally verified work from activities blocked by missing Docker/Maven, unavailable package-registry access, or the need for real collaborators and a signed-in Figma workspace.
