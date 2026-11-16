@@ -1,0 +1,148 @@
+CDD LAB EXECUTION LOG
+Date: 2026-11-16
+Environment: isolated Linux workspace
+
+===== EXPERIMENT 1 =====
+$ git --version
+git version 2.47.3
+
+$ git init
+Initialized empty Git repository in /tmp/cdd-lab-run/exp1/git-lab-1/.git/
+
+$ git status
+On branch main
+No commits yet
+nothing to commit (create/copy files and use "git add" to track)
+
+$ git add notes.txt
+$ git commit -m "Initial commit: added notes.txt"
+[main (root-commit) 4a83b4b] Initial commit: added notes.txt
+1 file changed, 1 insertion(+)
+create mode 100644 notes.txt
+
+$ git log --oneline
+4a83b4b Initial commit: added notes.txt
+
+===== EXPERIMENT 2 =====
+$ git init --bare git-lab-2-remote.git
+Initialized empty Git repository in /tmp/cdd-lab-run/exp2/git-lab-2-remote.git/
+
+$ git clone /tmp/cdd-lab-run/exp2/git-lab-2-remote.git student-a
+Cloning into 'student-a'...
+warning: You appear to have cloned an empty repository.
+done.
+
+$ git push -u origin main
+[new branch] main -> main
+branch 'main' set up to track 'origin/main'.
+
+$ git clone /tmp/cdd-lab-run/exp2/git-lab-2-remote.git student-b
+Cloning into 'student-b'...
+done.
+
+$ git push origin main
+bcb023b..8bd49af main -> main
+
+$ git fetch origin
+bcb023b..8bd49af main -> origin/main
+
+$ git status
+On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+nothing to commit, working tree clean
+
+$ git branch -r
+origin/HEAD -> origin/main
+origin/main
+
+$ git pull origin main
+Updating bcb023b..8bd49af
+Fast-forward
+message.txt | 1 +
+1 file changed, 1 insertion(+)
+create mode 100644 message.txt
+
+$ cat message.txt
+This file was created by Student A.
+
+===== EXPERIMENT 3 =====
+$ git branch
+* main
+
+$ git checkout feature-version
+Switched to branch 'feature-version'
+
+$ git merge feature-version
+Updating d4bdd5c..d2fc895
+Fast-forward
+version.txt | 1 +
+1 file changed, 1 insertion(+)
+create mode 100644 version.txt
+
+$ git merge feature-version (intentional conflict)
+CONFLICT (content): Merge conflict in version.txt
+Automatic merge failed; fix conflicts and then commit the result.
+Merge conflict reproduced as expected.
+
+$ git commit -m "Resolve version conflict between main and feature-version"
+[main 4052013] Resolve version conflict between main and feature-version
+
+$ git rebase main
+CONFLICT (content): Merge conflict in version.txt
+Could not apply feature-version commit; conflict resolved manually.
+
+$ GIT_EDITOR=true git rebase --continue
+[detached HEAD 7e796a6] Add feature work note on feature-version
+Successfully rebased and updated refs/heads/feature-version.
+
+$ git log --oneline --graph --all
+* 7e796a6 Add feature work note on feature-version
+* a3593f0 Update release notes on main
+* 4052013 Resolve version conflict between main and feature-version
+* d2fc895 Add version.txt with Version 1.0 on feature-version
+* d4bdd5c Initial commit
+
+$ git merge feature-version
+Updating a3593f0..7e796a6
+Fast-forward
+
+===== EXPERIMENT 6 / 7 LOCAL CHECKS =====
+$ node index.js
+Hello from CI/CD lab
+
+$ npm test
+TAP version 13
+# Subtest: adds 1 + 2 to equal 3
+ok 1 - adds 1 + 2 to equal 3
+1..1
+# tests 1
+# pass 1
+# fail 0
+
+$ npm install --save-dev jest
+Failed/timed out: npm registry not reachable from this workspace.
+
+===== EXPERIMENT 9 LOCAL APP SMOKE TEST =====
+$ curl -sS http://127.0.0.1:5000
+Hello from a Dockerized Node.js app!
+
+Note: this smoke test used Node's built-in HTTP server as a local fallback; it did not verify the manual's Express dependency or a Docker container.
+
+===== EXPERIMENT 8 / 10 DOCKER CHECKS =====
+$ docker --version
+bash: docker: command not found
+
+$ docker pull hello-world
+bash: docker: command not found
+
+$ docker compose version
+bash: docker: command not found
+
+===== EXPERIMENT 11 CHECKS =====
+$ python3 app.py
+Hello from a Dockerized Python application!
+
+$ mvn package
+bash: mvn: command not found
+
+===== END =====
