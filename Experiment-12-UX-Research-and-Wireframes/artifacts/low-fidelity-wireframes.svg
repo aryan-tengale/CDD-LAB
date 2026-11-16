@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#f5f5f5"/>
+  <text x="40" y="48" font-family="Arial" font-size="28" font-weight="bold" fill="#222">CampusBite — Low-fidelity wireframes</text>
+  <g font-family="Arial" fill="#222" stroke="#555" stroke-width="2">
+    <g transform="translate(55 90)">
+      <rect width="320" height="610" rx="18" fill="white"/><text x="18" y="35" stroke="none" font-size="22" font-weight="bold">1. Home</text>
+      <rect x="18" y="55" width="284" height="44" fill="#eee"/><text x="30" y="83" stroke="none" font-size="15">Logo / Search</text>
+      <rect x="18" y="115" width="284" height="54" fill="#fafafa"/><text x="30" y="147" stroke="none" font-size="15">Search restaurants or dishes</text>
+      <rect x="18" y="185" width="82" height="36" rx="8" fill="#eee"/><rect x="110" y="185" width="82" height="36" rx="8" fill="#eee"/><rect x="202" y="185" width="100" height="36" rx="8" fill="#eee"/><text x="32" y="208" stroke="none" font-size="13">Meals</text><text x="123" y="208" stroke="none" font-size="13">Snacks</text><text x="216" y="208" stroke="none" font-size="13">Drinks</text>
+      <rect x="18" y="240" width="284" height="100" fill="#fafafa"/><rect x="30" y="252" width="76" height="76" fill="#ddd"/><text x="120" y="278" stroke="none" font-size="15">Restaurant A</text><text x="120" y="302" stroke="none" font-size="13">ETA · Price · Rating</text>
+      <rect x="18" y="355" width="284" height="100" fill="#fafafa"/><rect x="30" y="367" width="76" height="76" fill="#ddd"/><text x="120" y="393" stroke="none" font-size="15">Restaurant B</text><text x="120" y="417" stroke="none" font-size="13">ETA · Price · Rating</text>
+      <rect x="18" y="475" width="284" height="90" fill="#eee"/><text x="40" y="525" stroke="none" font-size="15">Home   Orders   Cart   Profile</text>
+    </g>
+    <g transform="translate(440 90)">
+      <rect width="320" height="610" rx="18" fill="white"/><text x="18" y="35" stroke="none" font-size="22" font-weight="bold">2. Restaurant</text>
+      <rect x="18" y="55" width="284" height="140" fill="#ddd"/><text x="30" y="130" stroke="none" font-size="16">Restaurant hero image</text>
+      <text x="18" y="230" stroke="none" font-size="18" font-weight="bold">Campus Kitchen</text><text x="18" y="255" stroke="none" font-size="14">ETA · Rating · Delivery fee</text>
+      <rect x="18" y="280" width="284" height="70" fill="#fafafa"/><text x="30" y="308" stroke="none" font-size="15">Meal item 1</text><text x="30" y="330" stroke="none" font-size="13">Description / price</text>
+      <rect x="18" y="365" width="284" height="70" fill="#fafafa"/><text x="30" y="393" stroke="none" font-size="15">Meal item 2</text><text x="30" y="415" stroke="none" font-size="13">Description / price</text>
+      <rect x="18" y="470" width="284" height="60" fill="#eee"/><text x="90" y="507" stroke="none" font-size="17">View Cart</text>
+    </g>
+    <g transform="translate(825 90)">
+      <rect width="320" height="610" rx="18" fill="white"/><text x="18" y="35" stroke="none" font-size="22" font-weight="bold">3. Checkout</text>
+      <rect x="18" y="60" width="284" height="95" fill="#fafafa"/><text x="30" y="92" stroke="none" font-size="15">Delivery address</text><text x="30" y="120" stroke="none" font-size="13">Saved address / Edit</text>
+      <rect x="18" y="175" width="284" height="110" fill="#fafafa"/><text x="30" y="205" stroke="none" font-size="15">Order summary</text><text x="30" y="232" stroke="none" font-size="13">Items · Delivery · Discount</text><text x="30" y="258" stroke="none" font-size="15">Total amount</text>
+      <rect x="18" y="305" width="284" height="72" fill="#fafafa"/><text x="30" y="335" stroke="none" font-size="15">Payment method</text><text x="30" y="358" stroke="none" font-size="13">UPI / Card / Cash</text>
+      <rect x="18" y="410" width="284" height="62" fill="#ddd"/><text x="85" y="448" stroke="none" font-size="17">Place Order</text>
+      <text x="18" y="520" stroke="none" font-size="13">Order status shown after payment</text>
+    </g>
+  </g>
+</svg>
