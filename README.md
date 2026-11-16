@@ -15,10 +15,14 @@ This public repository contains selected laboratory work based on the course lab
 | 5 | Team collaboration using GitHub repositories and branching strategies | [Open guide](Experiment-05-Team-Collaboration/) |
 | 6 | Continuous Integration workflows using GitHub Actions | [Open guide](Experiment-06-GitHub-Actions-CI/) |
 | 7 | Automating build and testing using GitHub Actions workflows | [Open guide](Experiment-07-Automated-Build-and-Testing/) |
+| 8 | Creating Docker images and containers for simple applications | [Open guide](Experiment-08-Docker-Images-and-Containers/) |
+| 9 | Writing Dockerfiles and building custom containerized applications | [Open guide](Experiment-09-Dockerfiles-and-Custom-Images/) |
+| 10 | Developing multi-container applications using Docker Compose | [Open guide](Experiment-10-Docker-Compose-Multi-Container/) |
+| 11 | Containerizing and executing a Java or Python application using Docker | [Open guide](Experiment-11-Docker-Multi-Stage-Java-Python/) |
 | 12 | User personas, user journeys and wireframes | [Open guide](Experiment-12-UX-Research-and-Wireframes/) |
 | 13 | High-fidelity UI prototypes and reusable components using Figma | [Open guide](Experiment-13-Figma-UI-Prototyping/) |
 
-**Scope note:** Experiments 8–11 (Docker) and Experiment 14 (Mini Project) are intentionally excluded.
+**Scope note:** Experiment 14 (Mini Project) is intentionally excluded.
 
 ## Repository structure
 
@@ -31,14 +35,15 @@ CDD-LAB/
 ├── Experiment-05-Team-Collaboration/
 ├── Experiment-06-GitHub-Actions-CI/
 ├── Experiment-07-Automated-Build-and-Testing/
+├── Experiment-08-Docker-Images-and-Containers/
+├── Experiment-09-Dockerfiles-and-Custom-Images/
+├── Experiment-10-Docker-Compose-Multi-Container/
+├── Experiment-11-Docker-Multi-Stage-Java-Python/
 ├── Experiment-12-UX-Research-and-Wireframes/
 ├── Experiment-13-Figma-UI-Prototyping/
-├── .github/workflows/
-│   ├── ci.yml
-│   └── build-test.yml
-├── index.js
-├── sum.js
-└── sum.test.js
+└── .github/workflows/
+    ├── ci.yml
+    └── build-test.yml
 ```
 
 ## GitHub Actions samples
@@ -46,11 +51,20 @@ CDD-LAB/
 - **CI:** runs the Node.js sample on pushes and pull requests to `main`.
 - **Build and Test:** runs a Jest test and optional build command across Node.js 18 and 20.
 
-These workflows are included as lab implementations. Check the repository's **Actions** tab for actual run results after GitHub executes them.
+Check the repository's **Actions** tab for actual run results after GitHub executes the workflows.
+
+## Docker samples
+
+- **Experiment 8:** pulls and runs `hello-world` and Nginx images.
+- **Experiment 9:** builds and runs a custom Express application image.
+- **Experiment 10:** uses Docker Compose to run a web application with MySQL.
+- **Experiment 11:** demonstrates a Java multi-stage build and a Python single-stage build.
+
+The MySQL credentials in the Compose sample are demonstration-only values. Do not reuse them in a real deployment.
 
 ## Notes
 
 - Follow the experiment instructions and expected results in the official laboratory manual.
 - Replace sample names, email addresses, repository URLs and student details with your own where required.
 - Do not commit passwords, access tokens, API keys or other secrets.
-- Add your own screenshots, observations, Figma exports, and actual prototype link after completing each activity. No experiment is marked as completed merely because its guide is present.
+- Add your own screenshots, observations, Figma exports, and actual prototype link after completing each activity. A guide or sample file does not mean an experiment has been executed or completed.
